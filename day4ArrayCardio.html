@@ -169,11 +169,20 @@
 // const yearsLived = inventors.sort((a,b)=> (a.passed - a.year) - (b.passed - b.year));
 // console.table(yearsLived);
 
+
+// wanted to see actual ages
 // let ages = inventors.map(inventor => `${inventor.first} ${inventor.last} was ${(inventor.passed - inventor.year)} years old.`);
 // console.table(ages);
 
-let ages = inventors.map(inventor => `${inventor.first} ${inventor.last} was ${(inventor.passed - inventor.year)} years old.`);
-console.table(ages);
+
+//from james: adding age as a new key in the object
+let inventorsWithAge = inventors.map((inventor)=> {
+    let returnInventorObject = {
+      ...inventor, 
+      age:inventor.passed-inventor.year
+    }
+      return returnInventorObject
+  })
 
 
 
