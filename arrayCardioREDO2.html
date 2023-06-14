@@ -65,11 +65,11 @@ console.log(result4);
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
     // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
 
- const section = document.querySelector('mw-category');
- const streets = document.querySelectorAll('a');
-const streetsArr =  Array.from(streets).map(street => street.textContent);
-const result6 = streetsArr.filter(item => item.includes(' de '));
- console.table(result6);
+//  const section = document.querySelector('mw-category');
+//  const streets = document.querySelectorAll('a');
+// const streetsArr =  Array.from(streets).map(street => street.textContent);
+// const result6 = streetsArr.filter(item => item.includes(' de '));
+//  console.table(result6);
 
 
     // 7. sort Exercise
@@ -130,11 +130,45 @@ console.log(result8);
 
  // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
     // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
-const cat = document.querySelector('mw-category');
-const street = Array.from(document.querySelectorAll('a'));
-const street1 = street.map(item => item.textContent);
-const res = street1.filter(street.includes(' de '));
-console.table(res);
+// const cat = document.querySelector('mw-category');
+// const street = Array.from(document.querySelectorAll('a'));
+// const street1 = street.map(item => item.textContent);
+// const res = street1.filter(street.includes(' de '));
+// console.table(res);
+
+
+
+
+ // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
+    // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+
+// grab anchor Elements
+ const category = document.querySelector('mw-category');
+ const anchorTags = document.querySelectorAll('a');
+ console.log(anchorTags);
+const streetArray = Array.from(anchorTags);
+console.log(streetArray);
+const mappedArray = streetArray.map((street)=> street.textContent);
+const filteredArray = streetArray.filter(()=> streetArray.includes(' de '));
+console.table(filteredArray);
+//grab text from them
+// create an Array
+// filter array
+// 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   </script>
 </body>
