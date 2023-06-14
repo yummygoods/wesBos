@@ -27,6 +27,14 @@
 
     // Some and Every Checks
     // Array.prototype.some() // is at least one person 19 or older?
+// const age = people.map((el) => 2023 - el.year).some(el => el >= 19);
+
+//try without map
+const age = people.some((el) => 2023 - el.year >= 19 );
+console.log(age);
+
+
+
     // Array.prototype.every() // is everyone 19 or older?
 
     // Array.prototype.find()
