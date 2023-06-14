@@ -125,6 +125,17 @@ console.log(result8);
 
 // return acc
 // },{})
+
+
+
+ // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
+    // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+const cat = document.querySelector('mw-category');
+const street = Array.from(document.querySelectorAll('a'));
+const street1 = street.map(item => item.textContent);
+const res = street1.filter(street.includes(' de '));
+console.table(res);
+
   </script>
 </body>
 </html>
