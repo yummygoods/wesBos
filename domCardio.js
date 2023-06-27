@@ -1,15 +1,38 @@
+console.log("hello?");
+
 // Make a div
+let div = document.createElement("div");
+div.textContent = "hello?"
+document.body.appendChild(div);
+
+
+
+
 
 // add a class of wrapper to it
 
+div.className = "wrapper";
+
 // put it into the body
 
-// make an unordered list
 
+// make an unordered list
+let ul = document.createElement("ul");
+div.appendChild(ul);
 // add three list items with the words "one, two, three" in them
+let item1 = document.createElement("li");
+item1.textContent = "one";
+ul.appendChild(item1);
+
 // put that list into the above wrapper
 
 // create an image
+let image = document.createElement('img');
+image.src = "./wink1.PNG"
+image.width = 250;
+image.className = "cute"
+image.alt = "cute poop"
+div.appendChild(image);
 
 // set the source to an image
 // set the width to 250
@@ -18,6 +41,13 @@
 // Append that image to the wrapper
 
 // with HTML string, make a div, with two paragraphs inside of it
+
+let str = '<div<p>text</p> <p></p></div>';
+div.innerHTML += str;
+
+// let paragraphs = document.getElementsByName("p");
+// paragraphs.
+
 // put this div before the unordered list from above
 
 // add a class to the second paragraph called warning
