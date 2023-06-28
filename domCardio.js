@@ -42,17 +42,50 @@ div.appendChild(image);
 
 // with HTML string, make a div, with two paragraphs inside of it
 
-let str = '<div<p>text</p> <p></p></div>';
-div.innerHTML += str;
 
-// let paragraphs = document.getElementsByName("p");
-// paragraphs.
+// with HTML string, make a div, with two paragraphs inside of it
+// const html = "<p>paragraph 1</p><p>paragraph 2</p>";
+// const htmldiv = document.createElement('div');
+// htmldiv.innerHTML = html;
 
 // put this div before the unordered list from above
+// wrapdiv.in
+
+
+
+
+
+
+
+
+
+let str = "<div><p>paragraph 1</p><p>paragraph 2</p></div>";
+// div.innerHTML += str;
+ul.insertAdjacentHTML('beforebegin', str);
+
+
+
+// let str = `
+// <div>
+// <p>paragraph 1</p>
+// <p>paragraph 2</p>
+// </div>
+// `;
+// // div.innerHTML += str;
+// ul.insertAdjacentHTML('beforebegin', str);
+
+
+
+
+
+// put this div before the unordered list from above
+// div.prepend(str);
 
 // add a class to the second paragraph called warning
-// remove the first paragraph
 
+
+// remove the first paragraph
+// let paragraphs = document.getElementsByName("p");
 // create a function called generatePlayerCard that takes in three arguments: name, age, and height
 
 // have that function return html that looks like this:
